@@ -244,7 +244,7 @@ a {
 }
 
 .btn--accent {
-  background: #ec300;
+  background: #ec3000;
 }
 
 .btn--stretched {
@@ -662,7 +662,7 @@ a {
 
 .nav__list{
   width: 100% ;
-  margin: 0;/
+  margin: 0;
 }
 
 .nav__item{
@@ -823,5 +823,80 @@ a {
    .block-showcase__image > img {
     width: auto; /* for the image to be displayed in its actual size*/
     max-width: 700px; /*So the image does not get larger than 700px */
+   }
+ }
+
+
+ /* Footer */
+ .footer{
+   background: #232323;
+ }
+
+ .footer a {
+   color: #777;
+   transition: color .3s;
+ }
+.footer a:hover{
+  color: #fff;
+}
+
+ .footer__section {
+   padding: 2rem;
+   border-bottom: 1px solid #393939;
+ }
+.footer__section .list{
+  margin: 0;
+}
+
+ .footer__heading{
+   text-transform: uppercase;
+   font-weight: 600;
+ }
+
+ .footer__brand{
+   margin-top: 5rem;
+   text-align: center;
+ }
+
+ .footer__brand img {
+/*TODO Consider refactoring this and applying it to all images*/
+   width: 100%;
+   max-width: 230px;
+ }
+
+ .footer__copyright{
+   font-size: 2.1rem;
+   color: #fff;
+   opacity: .3;
+ }
+
+ @media screen and (min-width: 768px){
+   .footer__sections {
+     grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
+   }
+   .footer .collapsible__chevron{
+     display:none;
+   }
+
+   .footer .collapsible__content{
+     opacity: 1;
+    max-height: 100%;
+   }
+
+   .footer__brand{
+     margin-top: 1rem;
+     order: -1;
+   }
+
+   .footer__copyright{
+     font-size: 1.5rem;
+   }
+   
+   .footer__section{
+     border: 0;
+   }
+
+   .footer__heading{
+     font-size: 1.6rem;
    }
  }
